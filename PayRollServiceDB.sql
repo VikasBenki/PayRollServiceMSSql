@@ -24,5 +24,7 @@ insert into Employee_Payroll (Name, salary, startdate) values
 ---------UC4-Retrive Data from Employee payRoll--------
 select *from Employee_Payroll;
 
-
+------UC5-Retrive the employee salary of the particular employee----
+select salary from Employee_Payroll where Name='Dhoni';
+select *From Employee_Payroll where startdate between CAST('2008-01-1' as date) and getdate();
 
