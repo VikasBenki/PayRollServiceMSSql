@@ -21,5 +21,8 @@ insert into Employee_Payroll (Name, salary, startdate) values
 ('kaur', 200000.00, '2016-02-03');
 
 
+---------UC4-Retrive Data from Employee payRoll--------
+select *from Employee_Payroll;
+
 
 
