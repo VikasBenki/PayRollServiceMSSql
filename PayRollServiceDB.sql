@@ -12,3 +12,14 @@ salary float,
 startdate date
 );
 select *from Employee_Payroll;
+
+-------UC3-Create Employee PayRoll data as a part of the crud operation------
+insert into Employee_Payroll (Name, salary, startdate) values
+('Dhoni', 8000000.00, '2005-07-25'),
+('Dawan', 5000000.00, '2008-03-22'),
+('Smrithi', 3000000.00, '2018-05-15'),
+('kaur', 200000.00, '2016-02-03');
+
+
+
+
