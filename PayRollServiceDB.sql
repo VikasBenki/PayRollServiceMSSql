@@ -71,5 +71,8 @@ update employee_payroll set Net_Pay = (Basic_Pay-Deductions-Taxable_Pay-Income_T
 select * from employee_payroll;
 
 
-
+-UC10-- Two departments for same employee
+insert into employee_payroll (Name, Salary, StartDate, Gender, Phone, Address, Department, Basic_Pay, Deductions, Taxable_Pay, Income_Tax)
+					  values ('Dhoni', 8000000.00, '2005-07-25', 'M', 143252652, 'Bangkok', 'Dancing', 8000000.00, 1000.00, 2000.00, 1500.00);
+update employee_payroll set Net_Pay = (Basic_Pay-Deductions-Taxable_Pay-Income_Tax);
 
