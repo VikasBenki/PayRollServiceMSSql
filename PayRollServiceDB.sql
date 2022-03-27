@@ -31,8 +31,10 @@ select *From Employee_Payroll where startdate between CAST('2008-01-1' as date) 
 
 ----------UC6 Add gender to Employee Payroll table and update the rows to retrive the correct gender---
 Alter table Employee_Payroll add Gender char(1);
-Update Employee_Payroll set Gender = 'M' where id in (5, 6);
-Update Employee_payroll set Gender = 'F' where id in (7,8);
+Update Employee_Payroll set Gender = 'M' where id in (1, 2);
+Update Employee_payroll set Gender = 'F' where id in (3,4);
+
+
 
 -------UC7-- find sum, average, min, max and number of male and female employees--------
 select sum(Salary) as sumsalary,Gender from Employee_payroll group by Gender;
@@ -40,5 +42,9 @@ select avg(Salary) as avgsalary,Gender from Employee_payroll group by Gender;
 select max(Salary) as maxsalary,Gender from Employee_payroll group by Gender; 
 select min(Salary) as minsalary,Gender from Employee_payroll group by Gender; 
 select count(Name) as EmployeeCount,Gender from employee_payroll group by Gender;  
+
+
+
+
 
 
